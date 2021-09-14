@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Authorization</title>
+</head>
+<body>
+<FORM action="#" th:action="@{/user/auth}" th:method="post">
+    <input type="text" name="username" placeholder="Username">
+    <input type="text" name="password" placeholder="Password">
+    <p th:text="${errorAuthorization}"></p>
+    <P th:text="${ExistsUsernamePassword}"></P>
+    <p th:text="${exceptionNull}"></p>
+    <button>Submit</button>
+</FORM>
+</body>
+</html>
