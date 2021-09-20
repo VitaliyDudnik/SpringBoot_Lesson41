@@ -8,8 +8,6 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @Configuration
-@ComponentScan(basePackages = "com.tms")
-@EnableWebMvc
 public class WebConfiguration extends WebMvcConfigurerAdapter {
     private final ControllerInterceptor controllerInterceptor;
 
